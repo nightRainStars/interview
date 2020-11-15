@@ -32,14 +32,14 @@ function buildChildren(path, parentName = "") {
 const sidebar = buildChildren(workPath);
 
 module.exports = {
-  title: "前端随笔 FE-Essay",
+  title: "前端随笔",
   description:
     "记录前端重要知识点和遇到的好文章，同时还有前端重要算法知识，但最关键的是包含各大小厂真题。",
   themeConfig: {
-    nav: [{ text: "GitHub", link: "https://github.com/i-want-offer" }],
+    nav: [{ text: "GitHub", link: "https://github.com/zhang0101/interview" }],
     sidebar,
   },
-  dest: path.resolve(__dirname, "../", "../", "dist"),
-  base: "/dist/",
+  dest: path.resolve(__dirname, "../", "../", "interview"),
+  base: "/interview/",
   evergreen: true,
 };
